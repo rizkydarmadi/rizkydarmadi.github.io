@@ -7,5 +7,3 @@ Don't forget to join the channel for more videos like this.
 [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
 ![preview img](/preview.png)
-
-https://us05web.zoom.us/j/82192609545?pwd=NDZ0MnpKelZaMHZwUGFBdWtQb2hsZz09
