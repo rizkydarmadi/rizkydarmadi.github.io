@@ -1,0 +1,17 @@
+[
+  {
+    "judul": "Perjalanan Karir & Eksplorasi di Dunia IT",
+    "tanggal": "27 April 2026",
+    "file": "pengalaman-backend.md"
+  },
+  {
+    "judul": "Kenapa Saya Memilih Python dan Django untuk Project Skala Besar",
+    "tanggal": "15 April 2026",
+    "file": "python-django.md"
+  },
+  {
+    "judul": "Tips Implementasi Odoo ERP untuk Perusahaan",
+    "tanggal": "02 April 2026",
+    "file": "implementasi-odoo.md"
+  }
+]

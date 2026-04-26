@@ -31,22 +31,77 @@
 
 <body class="antialiased">
 
-    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-10">
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-10 border-b border-gray-800">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-white">Rizky Darmadi</a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#profil" class="hover:text-cyan-400 transition-colors">Profil</a>
-                <a href="#pengalaman" class="hover:text-cyan-400 transition-colors">Pengalaman</a>
-                <a href="#keahlian" class="hover:text-cyan-400 transition-colors">Keahlian</a>
-                <a href="#sertifikasi" class="hover:text-cyan-400 transition-colors">Sertifikasi</a>
-                <a href="https://wa.me/6281283359408?text=Halo,%20saya%20melihat%20portofolio%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut."
-                    target="_blank"
-                    class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full transition-colors">Hubungi
-                    Saya</a>
+
+            <a href="#"
+                class="text-2xl font-bold text-white hover:scale-105 transform transition-transform duration-300">
+                Rizky Darmadi
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-6">
+                <div class="flex space-x-2">
+                    <a href="#profil"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Profil</a>
+                    <a href="#pengalaman"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Karir</a>
+                    <a href="#keahlian"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Tentang
+                        Saya</a>
+                    <a href="#sertifikasi"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Sertifikasi</a>
+                    <a href="blog.html"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Blog</a>
+                </div>
+
+                <div class="h-6 w-px bg-gray-700"></div>
+
+                <div class="flex items-center space-x-5">
+                    <a href="https://linkedin.com/in/rizkydarmadi" target="_blank"
+                        class="text-xl text-gray-400 hover:text-cyan-500 hover:-translate-y-1 hover:scale-125 transform transition-all duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/rizkydarmadi" target="_blank"
+                        class="text-xl text-gray-400 hover:text-white hover:-translate-y-1 hover:scale-125 transform transition-all duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rizkydarmadi_" target="_blank"
+                        class="text-xl text-gray-400 hover:text-red-500 hover:-translate-y-1 hover:scale-125 transform transition-all duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.behance.net/rizkydarmadi" target="_blank"
+                        class="text-xl text-gray-400 hover:text-white-500 hover:-translate-y-1 hover:scale-125 transform transition-all duration-300">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
             </nav>
-            <button class="md:hidden text-white">
-                <i class="fas fa-bars"></i>
+
+            <button id="btn-mobile-menu"
+                class="md:hidden text-gray-300 hover:text-cyan-400 transform hover:scale-110 transition-all duration-300 focus:outline-none">
+                <i id="ikon-menu" class="fas fa-bars text-2xl"></i>
             </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-gray-900 border-t border-gray-800 shadow-xl absolute w-full left-0">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="#profil" class="text-gray-300 hover:text-cyan-400 font-medium mobile-link">Profil</a>
+                <a href="#pengalaman" class="text-gray-300 hover:text-cyan-400 font-medium mobile-link">Karir</a>
+                <a href="#keahlian" class="text-gray-300 hover:text-cyan-400 font-medium mobile-link">Tentang Saya</a>
+                <a href="#sertifikasi" class="text-gray-300 hover:text-cyan-400 font-medium mobile-link">Sertifikasi</a>
+                <a href="blog.html" class="text-gray-300 hover:text-cyan-400 font-medium">Blog</a>
+
+                <div class="flex space-x-6 pt-4 border-t border-gray-800">
+                    <a href="https://linkedin.com/in/rizkydarmadi" target="_blank"
+                        class="text-2xl text-gray-400 hover:text-cyan-500"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rizkydarmadi" target="_blank"
+                        class="text-2xl text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/rizkydarmadi_" target="_blank"
+                        class="text-2xl text-gray-400 hover:text-red-500"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.behance.net/rizkydarmadi" target="_blank"
+                        class="text-2xl text-gray-400 hover:text-cyan-500"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -55,11 +110,11 @@
             <div class="container mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Software Developer & Technology
                     Enthusiast</h1>
-                <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">Membangun solusi teknologi yang andal
-                    dan efisien untuk mendukung pertumbuhan bisnis.</p>
+                <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">Ruang personal untuk
+                    mendokumentasikan perjalanan, eksperimen, dan eksplorasi saya di dunia rekayasa perangkat lunak.</p>
                 <a href="#profil"
-                    class="mt-8 inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors">Lihat
-                    Profil Saya</a>
+                    class="mt-8 inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-colors">Jelajahi
+                    Portofolio</a>
             </div>
         </section>
 
@@ -72,32 +127,25 @@
                     </div>
                     <div class="md:w-2/3">
                         <p class="mb-4">
-                            A dedicated and results-driven back-end developer with 3 years of professional experience at
-                            PT Quantus Telematika Indonesia and
-                            currently contributing at PT Xurya Daya Indonesia. I hold a Bachelor's degree in Computer
-                            Science and have developed expertise in
-                            Python, SQL, and various aspects of back-end development. My passion for staying updated
-                            with the latest trends and technologies
-                            fuels my continuous growth as a developer, and my strongest attribute is my insatiable
-                            curiosity.
+                            Saya adalah back-end developer yang saat ini bekerja di PT Xurya Daya Indonesia,
+                            setelah sebelumnya menghabiskan sekitar 3 tahun di PT Quantus Telematika Indonesia.
+                            Dengan latar belakang Ilmu Komputer, saya terbiasa bekerja dengan Python, SQL,
+                            dan pengembangan sistem di sisi back-end. Website ini saya buat sebagai tempat
+                            untuk menyimpan dan membagikan perjalanan serta hasil belajar saya.
                         </p>
                         <br>
                         <p>
-                            This curiosity drives me to explore new technologies and ideas, which has enabled me to
-                            consistently deliver innovative solutions and
-                            contribute to the success of my teams and projects. I have a proven track record in building
-                            robust back-end systems, optimizing
-                            database performance, and ensuring seamless operation of web applications.
+                            Saya punya rasa ingin tahu yang tinggi terhadap teknologi. Saya suka mencoba hal baru,
+                            mengeksplorasi berbagai framework, dan mencari cara yang lebih rapi dalam membangun sistem.
+                            Dari pengalaman kerja, saya belajar bagaimana membuat back-end yang stabil,
+                            mengelola database dengan baik, dan menjaga performa aplikasi tetap optimal.
                         </p>
                         <br>
                         <p>
-                            I'm adept at solving complex technical challenges, writing clean and efficient code, and
-                            working collaboratively within cross-functional
-                            teams. With a strong technical foundation and a commitment to lifelong learning, I’m excited
-                            to take on new challenges and apply my
-                            passion for technology in meaningful projects. I'm always ready to contribute my skills and
-                            enthusiasm to the next opportunity that
-                            allows me to make an impact.
+                            Bagi saya, coding bukan hanya pekerjaan, tapi juga hal yang saya nikmati.
+                            Ada kepuasan tersendiri saat berhasil menyelesaikan masalah dan mengubahnya
+                            menjadi solusi yang sederhana dan terstruktur. Portofolio ini adalah kumpulan
+                            dari apa yang sudah saya pelajari dan kerjakan sejauh ini.
                         </p>
                     </div>
                 </div>
@@ -106,31 +154,45 @@
 
         <section id="pengalaman" class="py-20 bg-gray-900">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12 section-title">Pengalaman Profesional</h2>
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Jejak Karir Profesional</h2>
                 <div class="border-l-2 border-cyan-500 pl-8 space-y-12 relative max-w-3xl mx-auto">
+
+                    <div class="relative">
+                        <div class="absolute -left-[42px] top-1 h-4 w-4 bg-cyan-500 rounded-full"></div>
+                        <h3 class="text-xl font-bold text-white">Sr. Software Developer</h3>
+                        <p class="font-semibold text-cyan-400">PT Xurya Daya Indonesia | 2026 - Sekarang</p>
+                        <p class="mt-2 text-gray-400">Memimpin pengembangan sistem billing energi terbarukan dengan
+                            fokus pada akurasi data, reliability, dan integrasi
+                            real-time. Bertanggung jawab atas special project dengan kompleksitas tinggi, mulai dari
+                            desain arsitektur hingga
+                            delivery. Juga berperan sebagai mentor bagi tim developer melalui code review, diskusi
+                            teknis, dan standarisasi
+                            pengembangan untuk meningkatkan kualitas sistem secara keseluruhan..</p>
+                    </div>
+
                     <div class="relative">
                         <div class="absolute -left-[42px] top-1 h-4 w-4 bg-cyan-500 rounded-full"></div>
                         <h3 class="text-xl font-bold text-white">Software Developer</h3>
-                        <p class="font-semibold text-cyan-400">PT Xurya Daya Indonesia | 2024 - Sekarang</p>
-                        <p class="mt-2 text-gray-400">Developed a comprehensive billing system for tracking and managing
-                            kWh production from
-                            renewable energy sources. The system includes real-time monitoring of energy output,
-                            automatic calculation of billing based
-                            on energy usage, and integration with various renewable energy metrics. Implemented features
-                            for accurate invoicing and
-                            energy consumption reporting, ensuring compliance with industry standards</p>
+                        <p class="font-semibold text-cyan-400">PT Xurya Daya Indonesia | 2024 - 2026</p>
+                        <p class="mt-2 text-gray-400">Terlibat dalam pengembangan sistem penagihan komprehensif untuk
+                            melacak dan mengelola
+                            produksi kWh dari sumber energi terbarukan. Mengorkestrasi sistem pemantauan hasil energi
+                            secara real-time,
+                            kalkulasi tagihan otomatis, dan integrasi metrik energi. Salah satu tantangan menarik di
+                            sini adalah memastikan akurasi data dalam pembuatan faktur dan pelaporan konsumsi energi
+                            sesuai standar industri yang ketat.</p>
                     </div>
                     <div class="relative">
                         <div class="absolute -left-[42px] top-1 h-4 w-4 bg-cyan-500 rounded-full"></div>
                         <h3 class="text-xl font-bold text-white">Backend Developer</h3>
                         <p class="font-semibold text-cyan-400">PT Quantus Telematika Indonesia | 2021 - 2024</p>
-                        <p class="mt-2 text-gray-400">Build a super apps from PT QTI for managing reporting, mailing,
-                            analytical
-                            and microservices application a for BADAN INTELIJEN NEGARA(BIN). The application was build
-                            and developed with 15
-                            main technologies such as Python, Django, Fastapi, Pandas, Postgresql, Redis, ElasticSearch,
-                            Krakend API Gateway, Zato
-                            API Gateway, Nginx, Oauth, Ubuntu, Gitlab.
+                        <p class="mt-2 text-gray-400">Masa-masa eksplorasi intensif dalam membangun super app dari PT
+                            QTI yang menangani pelaporan, persuratan,
+                            analitik, hingga aplikasi berbasis microservices untuk National Intelligence Agency. Di
+                            proyek skala masif ini, saya berhadapan langsung dengan 15 teknologi utama, di antaranya
+                            Python, Django, FastAPI, Pandas, PostgreSQL, Redis,
+                            ElasticSearch, Krakend API Gateway, Zato API Gateway, Nginx, OAuth, ekosistem Ubuntu, dan
+                            GitLab.
                         </p>
                     </div>
                 </div>
@@ -139,13 +201,15 @@
 
         <section id="keahlian" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12 section-title">Fokus & Keahlian</h2>
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Ketertarikan & Eksplorasi Utama</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
                         <i class="fas fa-cogs text-4xl text-cyan-400 mb-4"></i>
-                        <h3 class="text-xl font-bold text-white mb-2">Implementasi Sistem ERP</h3>
-                        <p class="text-gray-400">Analisis kebutuhan dan implementasi Odoo/ERPNext untuk efisiensi
-                            bisnis.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Ekosistem ERP</h3>
+                        <p class="text-gray-400">
+                            Mendalami arsitektur dan alur kerja ERP, khususnya Odoo, mulai dari kustomisasi modul hingga
+                            integrasi antar sistem untuk mendukung operasional bisnis yang kompleks.
+                        </p>
                     </div>
                     <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
                         <i class="fas fa-briefcase text-4xl text-cyan-400 mb-4"></i>
@@ -154,13 +218,17 @@
                     </div>
                     <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
                         <i class="fas fa-bolt text-4xl text-cyan-400 mb-4"></i>
-                        <h3 class="text-xl font-bold text-white mb-2">Arsitektur Backend & API</h3>
-                        <p class="text-gray-400">Merancang dan membangun API yang cepat, aman, dan scalable.</p>
+                        <h3 class="text-xl font-bold text-white mb-2">Backend Development</h3>
+                        <p class="text-gray-400">Membangun sistem backend yang scalable dan maintainable, dengan fokus
+                            pada desain API yang clean, performa tinggi, serta keamanan data di setiap layer aplikasi.
+                        </p>
                     </div>
                     <div class="bg-gray-800 p-8 rounded-lg shadow-lg text-center">
                         <i class="fas fa-chalkboard-teacher text-4xl text-cyan-400 mb-4"></i>
-                        <h3 class="text-xl font-bold text-white mb-2">Mentoring & Alih Pengetahuan</h3>
-                        <p class="text-gray-400">Berbagi pengetahuan dalam sesi mentoring untuk pengembangan talenta.
+                        <h3 class="text-xl font-bold text-white mb-2">Berbagi Wawasan</h3>
+                        <p class="text-gray-400">Aktif berdiskusi dan berbagi insight seputar teknologi, mulai dari best
+                            practice coding hingga pengalaman real-world, untuk tumbuh bersama dalam komunitas
+                            developer.
                         </p>
                     </div>
                 </div>
@@ -171,45 +239,76 @@
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-12 section-title">Sertifikasi & Kualifikasi</h2>
                 <div class="max-w-3xl mx-auto space-y-6">
-                    <a href="https://www.hackerrank.com/certificates/f93fa67aee98" target="_blank" rel="noopener noreferrer"
+
+                    <a href="https://courses.edx.org/certificates/8ee9a7b827c44c35889b7e45fd8367e6" target="_blank"
+                        rel="noopener noreferrer"
                         class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
                         <div class="flex items-center gap-4">
                             <i class="fas fa-award text-2xl text-cyan-400"></i>
                             <div class="flex-grow">
-                                <h3 class="font-bold text-white">Software Engineer Certificate</h3>
+                                <h3 class="font-bold text-white">Database Design and Basic SQL in PostgreSQL</h3>
+                                <p class="text-gray-400">University of Michigan | 2026</p>
+                            </div>
+                            <i class="fas fa-external-link-alt text-gray-500"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://www.hackerrank.com/certificates/1bbf0f9430b7" target="_blank"
+                        rel="noopener noreferrer"
+                        class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-award text-2xl text-cyan-400"></i>
+                            <div class="flex-grow">
+                                <h3 class="font-bold text-white">SQL (Advanced) Certified</h3>
+                                <p class="text-gray-400">HackerRank | 2026</p>
+                            </div>
+                            <i class="fas fa-external-link-alt text-gray-500"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://www.hackerrank.com/certificates/f93fa67aee98" target="_blank"
+                        rel="noopener noreferrer"
+                        class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-award text-2xl text-cyan-400"></i>
+                            <div class="flex-grow">
+                                <h3 class="font-bold text-white">Sertifikat Software Engineer</h3>
                                 <p class="text-gray-400">HackerRank | 2025</p>
                             </div>
                             <i class="fas fa-external-link-alt text-gray-500"></i>
                         </div>
                     </a>
-                    <a href="https://www.hackerrank.com/certificates/b6cc33412e83" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.hackerrank.com/certificates/b6cc33412e83" target="_blank"
+                        rel="noopener noreferrer"
                         class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
                         <div class="flex items-center gap-4">
                             <i class="fas fa-award text-2xl text-cyan-400"></i>
                             <div class="flex-grow">
-                                <h3 class="font-bold text-white">Python (Basic) Certificate</h3>
+                                <h3 class="font-bold text-white">Sertifikat Python (Dasar)</h3>
                                 <p class="text-gray-400">HackerRank | 2022</p>
                             </div>
                             <i class="fas fa-external-link-alt text-gray-500"></i>
                         </div>
                     </a>
-                    <a href="https://www.hackerrank.com/certificates/a65cbe1f5666" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.hackerrank.com/certificates/a65cbe1f5666" target="_blank"
+                        rel="noopener noreferrer"
                         class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
                         <div class="flex items-center gap-4">
                             <i class="fas fa-award text-2xl text-cyan-400"></i>
                             <div class="flex-grow">
-                                <h3 class="font-bold text-white">SQL (Basic) Certificate</h3>
+                                <h3 class="font-bold text-white">Sertifikat SQL (Dasar)</h3>
                                 <p class="text-gray-400">HackerRank | 2022</p>
                             </div>
                             <i class="fas fa-external-link-alt text-gray-500"></i>
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/posts/rizkydarmadi_programmerlife-coder-pythondeveloper-activity-6952274274556461056-oHcR/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.linkedin.com/posts/rizkydarmadi_programmerlife-coder-pythondeveloper-activity-6952274274556461056-oHcR/"
+                        target="_blank" rel="noopener noreferrer"
                         class="block bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
                         <div class="flex items-center gap-4">
                             <i class="fas fa-award text-2xl text-cyan-400"></i>
                             <div class="flex-grow">
-                                <h3 class="font-bold text-white">Programmer Certificate</h3>
+                                <h3 class="font-bold text-white">Sertifikat Programmer</h3>
                                 <p class="text-gray-400">Badan Nasional Sertifikasi Profesi (BNSP) | 2022</p>
                             </div>
                             <i class="fas fa-external-link-alt text-gray-500"></i>
@@ -223,10 +322,10 @@
     <section id="kontak" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold section-title">Konsultasi & Kolaborasi</h2>
+                <h2 class="text-3xl font-bold section-title">Diskusi & Kolaborasi</h2>
                 <p class="mt-4 text-lg text-gray-400">
-                    Saya selalu terbuka untuk diskusi mengenai tantangan teknologi, ide proyek, atau potensi kolaborasi.
-                    Mari kita temukan solusi terbaik untuk kebutuhan Anda.
+                    Punya bahasan seru seputar teknologi, arsitektur coding, atau sekadar ingin menyapa sesama
+                    antusias IT? Silakan tinggalkan pesan!
                 </p>
             </div>
 
@@ -247,21 +346,8 @@
                     </div>
 
                     <div>
-                        <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Topik Diskusi</label>
-                        <select id="subject" name="subject" required
-                            class="block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-3 px-4 text-white focus:ring-cyan-500 focus:border-cyan-500">
-                            <option value="" disabled selected>Pilih salah satu...</option>
-                            <option value="Konsultasi Implementasi ERP">Konsultasi Implementasi ERP (Odoo/ERPNext)
-                            </option>
-                            <option value="Diskusi Proyek Backend API">Diskusi Proyek Backend & API</option>
-                            <option value="Pengembangan Sistem Bisnis">Pengembangan Sistem Bisnis (CRM/HRIS/LMS)</option>
-                            <option value="Peluang Kolaborasi">Peluang Kolaborasi</option>
-                            <option value="Lainnya">Lainnya</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Detail Pesan</label>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Pesan, Sapaan, Kritik
+                            & Saran</label>
                         <textarea id="message" name="message" rows="5" required
                             class="block w-full bg-gray-800 border-gray-700 rounded-md shadow-sm py-3 px-4 text-white focus:ring-cyan-500 focus:border-cyan-500"></textarea>
                     </div>
@@ -269,7 +355,7 @@
                     <div class="text-center">
                         <button type="submit"
                             class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-12 rounded-full text-lg transition-colors">
-                            Kirim Pesan
+                            Kirim
                         </button>
                     </div>
                 </form>
@@ -279,16 +365,40 @@
 
     <footer class="bg-gray-900 border-t border-gray-800">
         <div class="container mx-auto px-6 py-8 text-center text-gray-400">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="https://github.com/rizkydarmadi" target="_blank" class="text-2xl hover:text-cyan-400 transition-colors"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/rizkydarmadi" target="_blank" class="text-2xl hover:text-cyan-400 transition-colors"><i
-                        class="fab fa-linkedin"></i></a>
-            </div>
-            <p>&copy; 2025 Rizky Darmadi. Dibuat dengan semangat dan kode.</p>
+            <p>&copy; 2026 Rizky Darmadi</p>
         </div>
     </footer>
 
 </body>
+
+<script>
+    const btnMenu = document.getElementById('btn-mobile-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const ikonMenu = document.getElementById('ikon-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    // Buka/Tutup menu saat tombol diklik
+    btnMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+
+        // Ubah ikon hamburger (bars) jadi tanda silang (times) saat menu terbuka
+        if (mobileMenu.classList.contains('hidden')) {
+            ikonMenu.classList.remove('fa-times');
+            ikonMenu.classList.add('fa-bars');
+        } else {
+            ikonMenu.classList.remove('fa-bars');
+            ikonMenu.classList.add('fa-times');
+        }
+    });
+
+    // Otomatis tutup menu saat link diklik (supaya ga nutupin layar)
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            ikonMenu.classList.remove('fa-times');
+            ikonMenu.classList.add('fa-bars');
+        });
+    });
+</script>
 
 </html>

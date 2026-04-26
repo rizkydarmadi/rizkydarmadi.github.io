@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel - Rizky Darmadi</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111827;
+            color: #d1d5db;
+        }
+    </style>
+</head>
+
+<body class="antialiased flex flex-col min-h-screen">
+
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-10 border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white">Rizky Darmadi</a>
+            <a href="blog.html" class="text-cyan-400 hover:text-cyan-300 transition-colors font-semibold flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i> Kembali ke Blog
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <article id="konten-artikel" class="prose prose-invert prose-cyan lg:prose-xl mx-auto max-w-3xl">
+                <div class="text-center text-gray-400 py-10">
+                    <i class="fas fa-spinner fa-spin text-4xl mb-4"></i>
+                    <p>Membuka catatan...</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 mt-auto">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <p>&copy; 2026 Rizky Darmadi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Ambil nama file dari URL (misal: artikel.html?post=python-django.md)
+        const urlParams = new URLSearchParams(window.location.search);
+        const fileName = urlParams.get('post');
+        const wadahArtikel = document.getElementById('konten-artikel');
+
+        if (fileName) {
+            // 2. Cari file tersebut di dalam folder 'posts'
+            fetch(`posts/${fileName}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Artikel tidak ditemukan');
+                    }
+                    return response.text(); // Ambil teks markdown-nya
+                })
+                .then(markdownText => {
+                    // 3. Sulap Markdown jadi HTML lalu masukkan ke dalam layar
+                    wadahArtikel.innerHTML = marked.parse(markdownText);
+                })
+                .catch(error => {
+                    // Jika file markdown tidak ada atau salah ketik
+                    wadahArtikel.innerHTML = `
+                        <div class="text-center py-10">
+                            <i class="fas fa-exclamation-triangle text-5xl text-red-500 mb-4"></i>
+                            <h1 class="text-white text-3xl font-bold mb-2">Oops!</h1>
+                            <p class="text-gray-400">Artikel yang Anda cari tidak ditemukan atau belum ditulis.</p>
+                        </div>
+                    `;
+                });
+        } else {
+            // Jika pengunjung langsung buka artikel.html tanpa klik dari menu blog
+            wadahArtikel.innerHTML = `
+                <div class="text-center py-10">
+                    <h1 class="text-white text-3xl font-bold mb-2">Tidak ada artikel terpilih</h1>
+                    <p class="text-gray-400">Silakan pilih artikel dari halaman blog terlebih dahulu.</p>
+                    <a href="blog.html" class="inline-block mt-6 bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded-full transition-colors">Ke Daftar Blog</a>
+                </div>
+            `;
+        }
+    </script>
+</body>
+
+</html>

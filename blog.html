@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Catatan - Rizky Darmadi</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111827;
+            color: #d1d5db;
+        }
+    </style>
+</head>
+
+<body class="antialiased flex flex-col min-h-screen">
+
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-10 border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+            <a href="#"
+                class="text-2xl font-bold text-white hover:scale-105 transform transition-transform duration-300">
+                Rizky Darmadi
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-6">
+                <div class="flex space-x-2">
+                    <a href="index.html#profil"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Profil</a>
+                    <a href="index.html#pengalaman"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Karir</a>
+                    <a href="index.html#keahlian"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Tentang
+                        Saya</a>
+                    <a href="index.html#sertifikasi"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Sertifikasi</a>
+                    <a href="blog.html"
+                        class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 hover:text-cyan-400 transition-all duration-300">Blog</a>
+                </div>
+
+                <div class="h-6 w-px bg-gray-700"></div>
+
+                <div class="flex items-center space-x-5">
+                    <a href="https://linkedin.com/in/rizkydarmadi" target="_blank"
+                        class="text-xl text-gray-400 hover:text-cyan-500 hover:-translate-y-1 hover:scale-125 transform transition-all duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/rizkydarmadi" target="_blank"
+                        class="text-xl text-gray-400 hover:text-white hover:-translate-y-1 hover:scale-125 transform transition-all duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/rizkydarmadi_" target="_blank"
+                        class="text-xl text-gray-400 hover:text-red-500 hover:-translate-y-1 hover:scale-125 transform transition-all duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.behance.net/rizkydarmadi" target="_blank"
+                        class="text-xl text-gray-400 hover:text-white-500 hover:-translate-y-1 hover:scale-125 transform transition-all duration-300">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            </nav>
+
+            <button id="btn-mobile-menu"
+                class="md:hidden text-gray-300 hover:text-cyan-400 transform hover:scale-110 transition-all duration-300 focus:outline-none">
+                <i id="ikon-menu" class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-gray-900 border-t border-gray-800 shadow-xl absolute w-full left-0">
+            <div class="flex flex-col px-6 py-4 space-y-4">
+                <a href="index.html#profil" class="text-gray-300 hover:text-cyan-400 font-medium mobile-link">Profil</a>
+                <a href="index.html#pengalaman" class="text-gray-300 hover:text-cyan-400 font-medium mobile-link">Karir</a>
+                <a href="index.html#keahlian" class="text-gray-300 hover:text-cyan-400 font-medium mobile-link">Tentang Saya</a>
+                <a href="index.html#sertifikasi" class="text-gray-300 hover:text-cyan-400 font-medium mobile-link">Sertifikasi</a>
+                <a href="blog.html" class="text-gray-300 hover:text-cyan-400 font-medium">Blog</a>
+
+                <div class="flex space-x-6 pt-4 border-t border-gray-800">
+                    <a href="https://linkedin.com/in/rizkydarmadi" target="_blank"
+                        class="text-2xl text-gray-400 hover:text-cyan-500"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rizkydarmadi" target="_blank"
+                        class="text-2xl text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/rizkydarmadi_" target="_blank"
+                        class="text-2xl text-gray-400 hover:text-red-500"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.behance.net/rizkydarmadi" target="_blank"
+                        class="text-2xl text-gray-400 hover:text-cyan-500"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-32 pb-20">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h1 class="text-4xl font-bold text-white mb-2 text-center">Artikel & Catatan</h1>
+            <p class="text-center text-gray-400 mb-10">Kumpulan tulisan mengenai teknologi, coding, dan pengalaman saya.</p>
+
+            <div class="relative mb-10">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                    <i class="fas fa-search text-gray-500"></i>
+                </div>
+                <input type="text" id="input-pencarian" class="block w-full bg-gray-800 border border-gray-700 text-white rounded-lg pl-12 py-4 focus:ring-cyan-500 focus:border-cyan-500 transition-colors shadow-lg" placeholder="Cari judul artikel...">
+            </div>
+
+            <div id="daftar-blog" class="space-y-6">
+                <p id="loading-text" class="text-center text-gray-400"><i class="fas fa-spinner fa-spin mr-2"></i> Memuat artikel...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <p>&copy; 2025 Rizky Darmadi</p>
+        </div>
+    </footer>
+
+    <script>
+        let semuaArtikel = []; // Tempat menyimpan data mentah
+
+        // 1. Ambil data JSON
+        fetch('data-blog.json')
+            .then(response => response.json())
+            .then(data => {
+                semuaArtikel = data; // Simpan ke memori
+                document.getElementById('loading-text').style.display = 'none';
+                tampilkanArtikel(semuaArtikel); // Tampilkan semua saat pertama kali dimuat
+            })
+            .catch(error => {
+                console.error('Gagal:', error);
+                document.getElementById('loading-text').innerHTML = 'Belum ada artikel saat ini.';
+            });
+
+        // 2. Fungsi untuk menggambar HTML berdasarkan data
+        function tampilkanArtikel(dataArtikel) {
+            const wadah = document.getElementById('daftar-blog');
+            wadah.innerHTML = ''; // Kosongkan wadah dulu
+
+            if(dataArtikel.length === 0) {
+                wadah.innerHTML = '<p class="text-center text-gray-500 py-8">Artikel tidak ditemukan.</p>';
+                return;
+            }
+
+            dataArtikel.forEach(post => {
+                wadah.innerHTML += `
+                    <a href="artikel.html?post=${post.file}" class="block bg-gray-800/50 p-6 rounded-xl hover:bg-gray-800 transition-all duration-300 border border-gray-800 hover:border-cyan-500 group">
+                        <div class="flex flex-col gap-2">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">${post.judul}</h3>
+                            <span class="text-sm text-gray-400 flex items-center">
+                                <i class="far fa-calendar-alt mr-2 text-cyan-500"></i> ${post.tanggal}
+                            </span>
+                        </div>
+                    </a>
+                `;
+            });
+        }
+
+        // 3. Fitur Pencarian Real-time
+        document.getElementById('input-pencarian').addEventListener('input', function(e) {
+            const kataKunci = e.target.value.toLowerCase();
+            
+            // Saring artikel yang judulnya mengandung kata kunci pencarian
+            const artikelDisaring = semuaArtikel.filter(post => 
+                post.judul.toLowerCase().includes(kataKunci)
+            );
+            
+            tampilkanArtikel(artikelDisaring);
+        });
+
+        const btnMenu = document.getElementById('btn-mobile-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const ikonMenu = document.getElementById('ikon-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    // Buka/Tutup menu saat tombol diklik
+    btnMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+
+        // Ubah ikon hamburger (bars) jadi tanda silang (times) saat menu terbuka
+        if (mobileMenu.classList.contains('hidden')) {
+            ikonMenu.classList.remove('fa-times');
+            ikonMenu.classList.add('fa-bars');
+        } else {
+            ikonMenu.classList.remove('fa-bars');
+            ikonMenu.classList.add('fa-times');
+        }
+    });
+
+    // Otomatis tutup menu saat link diklik (supaya ga nutupin layar)
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            ikonMenu.classList.remove('fa-times');
+            ikonMenu.classList.add('fa-bars');
+        });
+    });
+    </script>
+</body>
+</html>
