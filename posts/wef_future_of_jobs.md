@@ -39,7 +39,7 @@ Selain itu, sekarang perusahaan juga mulai peduli sama **kesehatan dan kesejahte
 
 Kalau kamu sendiri, skill apa yang lagi pengen kamu upgrade tahun ini?
 
-_Data disarikan dari World Economic Forum, Future of Jobs Report 2025._
+_Source: World Economic Forum, Future of Jobs Report 2025._
 
 https://www.weforum.org/publications/the-future-of-jobs-report-2025/
 
