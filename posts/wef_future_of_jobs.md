@@ -1,4 +1,4 @@
-# **Ikut atau Tertinggal? Analisa Tren Pekerjaan Masa Depan**
+# **Mau Ikut atau Tertinggal? Analisa Tren Pekerjaan Masa Depan 2025-2030**
 
 Dunia kerja sedang berubah lebih cepat dari yang kita bayangkan. Teknologi baru terus bermunculan, pola bisnis ikut bergeser, dan kebutuhan skill pun ikut berevolusi. Berdasarkan laporan World Economic Forum (WEF) 2025, kita sudah masuk ke fase di mana kemampuan beradaptasi bukan lagi nilai tambah-melainkan syarat utama untuk tetap relevan. Pertanyaannya, kita mau jadi bagian dari perubahan ini atau justru tertinggal? Yuk, kita mulai dengan memahami tiga hal krusial yang akan membentuk arah karir hingga tahun 2030:
 
